@@ -7,7 +7,7 @@ export default function Home() {
                 <div className={styles.row}>
                     <div className="col-lg-9 col-md-10 mx-auto">
                         <div className="heading_container">
-                            <h2 className={styles.h2}>Home test</h2>
+                            <h2 className={styles.h2}>Home</h2>
                         </div>
                         <div
                             id="carouselExampleControls"
