@@ -5,6 +5,7 @@
     width: auto;
     left: auto;
     padding: 2em;
+    max-height: 100%;
 }
 
 .create_class *,
@@ -41,7 +42,7 @@
     margin-bottom: 1.5rem;
 }
 
-.form .required::after,
+.form .required::after, 
 .form_p .required::after {
     content: '*';
     color: red;
