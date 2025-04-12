@@ -1,4 +1,4 @@
-const host = `${import.meta.env.VITE_APP_SERVER_URL}/api`;
+const host = `${import.meta.env.VITE_APP_SERVER_URL}/api/class`;
 
 async function requester(method, url, data, signal) {
     const option = {
