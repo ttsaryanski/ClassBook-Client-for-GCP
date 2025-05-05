@@ -66,13 +66,12 @@ export default function Students() {
 
     return (
         <>
+            {isLoading && <Spinner />}
             <h1 className={styles.h1}>Students</h1>
             <section
                 className={`${styles.card_container} card users-container`}
             >
                 <div className={`${styles.wrapper} table-wrapper`}>
-                    {isLoading && <Spinner />}
-
                     {!isLoading && students.length === 0 && <NothingYet />}
 
                     <table className="table">

@@ -118,6 +118,7 @@ export default function Classes() {
 
     return (
         <>
+            {isLoading && <Spinner />}
             <h1 className={styles.h1}>Classes</h1>
             <section
                 className={`${styles.card_container} card users-container`}
@@ -131,8 +132,6 @@ export default function Classes() {
                 )}
 
                 <div className={`${styles.wrapper} table-wrapper`}>
-                    {isLoading && <Spinner />}
-
                     {!isLoading && classes.length === 0 && <NothingYet />}
 
                     <table className="table">
