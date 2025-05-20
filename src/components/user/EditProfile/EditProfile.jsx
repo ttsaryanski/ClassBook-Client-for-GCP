@@ -88,7 +88,7 @@ export default function EditProfile() {
         setPending(true);
         setError(null);
         try {
-            const editedUser = await authService.editUser(user._id, formData);
+            const editedUser = await authService.editUser(formData);
             if (isTeacher) {
                 try {
                     await teacherService.editById(teacherId, {
