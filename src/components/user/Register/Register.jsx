@@ -42,8 +42,8 @@ export default function Register() {
                 firstName,
                 lastName,
                 email,
-                identifier: identifier.trim() || null,
-                secretKey: secretKey.trim() || null,
+                identifier: identifier.trim() || undefined,
+                secretKey: secretKey.trim() || undefined,
                 password,
             });
 
