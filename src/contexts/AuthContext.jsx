@@ -57,7 +57,6 @@ export function AuthProvider({ children }) {
         try {
             setError(null);
             await authService.login({ email, password });
-            setIsLoading(true);
             await fetchUser();
             navigate("/");
         } catch (err) {
