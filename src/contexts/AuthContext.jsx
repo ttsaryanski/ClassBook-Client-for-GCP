@@ -26,7 +26,7 @@ export function AuthProvider({ children }) {
         } catch (err) {
             setUser(null);
             setIsDirector(false);
-            if (err.message === "Invalid token!") {
+            if (err.message === "Missing token!") {
                 setError(null);
             } else {
                 setError(err.message);
