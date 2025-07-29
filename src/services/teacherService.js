@@ -2,8 +2,6 @@ import { api } from "../utils/requester";
 
 const endPoints = {
     getAll: "/teacher",
-    // createNew: '/data/cars',
-    // apiById: "/item",
     search: (query) => `/teacher?email=${query}`,
 };
 
@@ -31,10 +29,6 @@ async function searchTeacher(query, signal) {
     return await api.get(endPoints.search(query, signal));
 }
 
-// async function getMyCar(userId) {
-//     return await api.get(endPoints.getMyCar(userId));
-// }
-
 export const teacherService = {
     getAll,
     createNew,
@@ -42,5 +36,4 @@ export const teacherService = {
     editById,
     delById,
     searchTeacher,
-    // getMyCar
 };

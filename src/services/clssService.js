@@ -2,9 +2,6 @@ import { api } from "../utils/requester";
 
 const endPoints = {
     getAll: "/clss",
-    // createNew: '/data/cars',
-    // apiById: "/item",
-    // search: (query) => `/data/cars?where=year%3D${query}`,
     getMyClasses: (teacherId) => `/teacher?_ownerId=${teacherId}`,
 };
 
@@ -31,10 +28,6 @@ async function editById(id, data) {
 async function delById(id) {
     return await api.del(endPoints.getAll + `/${id}`);
 }
-
-// async function searchItem(query) {
-//     return await api.get(endPoints.search(query));
-// }
 
 async function getMyClasses(userId, signal) {
     return await api.get(endPoints.getMyClasses(userId, signal));
